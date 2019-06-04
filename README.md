@@ -1,4 +1,4 @@
-# Advent of Code 2015
+# Advent of Code
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
@@ -8,9 +8,9 @@ This repo is my personal attempt at solving the [Advent of Code](http://adventof
 
 After completing the 2018 edition, I started solving the problems for the previous years. Below are the links to the solutions for the different programming languages and challenges.
 
-|   Language  | Challenge | #problems solved |  Links                                       
-| ------------|-----------|------------------|-------------------------------------------------------------------------------------------------------------------- |
-|  Python     | 2015      |                3 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/python) [\[AoC\]](http://adventofcode.com/2015/) |
-|  C++        | 2015      |                0 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/cpp) [\[AoC\]](http://adventofcode.com/2015/)    |
-|  SQL        | 2015      |                0 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/sql) [\[AoC\]](http://adventofcode.com/2015/)    |
+| Challenge |   Language  | #problems solved |  Links                                       
+|-----------| ------------|------------------|---------------------------------------------------------------------------------------------------------------------|
+| 2015      |  Python     |                3 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/python) [\[AoC\]](http://adventofcode.com/2015/) |
+| 2015      |  C++        |                0 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/cpp) [\[AoC\]](http://adventofcode.com/2015/)    |
+| 2015      |  SQL        |                0 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/sql) [\[AoC\]](http://adventofcode.com/2015/)    |
 
