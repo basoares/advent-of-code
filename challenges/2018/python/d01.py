@@ -4,8 +4,6 @@ Advent of Code - 2018
 
 --- Day 1: Chronal Calibration ---
 
-Released under the MIT License <http://opensource.org/licenses/mit-license.php>
-
 '''
 
 import os

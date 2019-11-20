@@ -4,8 +4,6 @@ Advent of Code - 2018
 
 --- Day 14: Chocolate Charts ---
 
-Released under the MIT License <http://opensource.org/licenses/mit-license.php>
-
 '''
 
 def part1(target=430971):

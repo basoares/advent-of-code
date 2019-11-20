@@ -4,8 +4,6 @@ Advent of Code - 2018
 
 --- Day 3: No Matter How You Slice It ---
 
-Released under the MIT License <http://opensource.org/licenses/mit-license.php>
-
 '''
 
 import os

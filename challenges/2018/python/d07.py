@@ -4,8 +4,6 @@ Advent of Code - 2018
 
 --- Day 7: The Sum of Its Parts ---
 
-Released under the MIT License <http://opensource.org/licenses/mit-license.php>
-
 '''
 
 from collections import defaultdict

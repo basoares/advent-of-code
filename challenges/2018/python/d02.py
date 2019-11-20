@@ -1,9 +1,8 @@
 '''
 
 Advent of Code - 2018
---- Day 2: Inventory Management System ---
 
-Released under the MIT License <http://opensource.org/licenses/mit-license.php>
+--- Day 2: Inventory Management System ---
 
 '''
 

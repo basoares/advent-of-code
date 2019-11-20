@@ -4,8 +4,6 @@ Advent of Code - 2018
 
 --- Day 9: Marble Mania ---
 
-Released under the MIT License <http://opensource.org/licenses/mit-license.php>
-
 '''
 
 import re

@@ -1,3 +1,11 @@
+'''
+
+Advent of Code - 2018
+
+--- Day 25: Four-Dimensional Adventure ---
+
+'''
+
 import re
 from collections import defaultdict, deque
 

@@ -4,8 +4,6 @@ Advent of Code - 2018
 
 --- Day 5: Alchemical Reduction ---
 
-Released under the MIT License <http://opensource.org/licenses/mit-license.php>
-
 '''
 
 def react(unit1, unit2):

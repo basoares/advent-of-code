@@ -4,8 +4,6 @@ Advent of Code - 2018
 
 --- Day 11: Chronal Charge ---
 
-Released under the MIT License <http://opensource.org/licenses/mit-license.php>
-
 '''
 
 from collections import defaultdict
