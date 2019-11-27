@@ -4,8 +4,6 @@ Advent of Code - 2015
 
     --- Day 10: Elves Look, Elves Say ---
 
-Released under the MIT License <http://opensource.org/licenses/mit-license.php>
-
 '''
 
 from itertools import groupby
