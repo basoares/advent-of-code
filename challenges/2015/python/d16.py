@@ -4,8 +4,6 @@ Advent of Code - 2015
 
     --- Day 16: Aunt Sue ---
 
-Released under the MIT License <http://opensource.org/licenses/mit-license.php>
-
 '''
 
 from re import findall

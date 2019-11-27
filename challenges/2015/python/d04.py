@@ -4,8 +4,6 @@ Advent of Code - 2015
 
 --- Day 4: The Ideal Stocking Stuffer ---
 
-Released under the MIT License <http://opensource.org/licenses/mit-license.php>
-
 '''
 
 from hashlib import md5

@@ -4,8 +4,6 @@ Advent of Code - 2015
 
 --- Day 1: Not Quite Lisp ---
 
-Released under the MIT License <http://opensource.org/licenses/mit-license.php>
-
 '''
 
 tr = {'(': 1, ')': -1}

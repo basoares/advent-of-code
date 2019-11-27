@@ -4,8 +4,6 @@ Advent of Code - 2015
 
     --- Day 7: Some Assembly Required ---
 
-Released under the MIT License <http://opensource.org/licenses/mit-license.php>
-
 '''
 
 from collections import defaultdict

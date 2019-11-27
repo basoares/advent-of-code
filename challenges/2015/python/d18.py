@@ -4,8 +4,6 @@ Advent of Code - 2015
 
     --- Day 18: Like a GIF For Your Yard ---
 
-Released under the MIT License <http://opensource.org/licenses/mit-license.php>
-
 '''
 
 from itertools import product

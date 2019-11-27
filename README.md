@@ -10,9 +10,10 @@ After completing the 2018 edition, I started solving the problems for the previo
 
 | Challenge |   Language  | #problems solved |  Links                                       
 |-----------| ------------|------------------|---------------------------------------------------------------------------------------------------------------------|
-| [2015](http://adventofcode.com/2015)      |  Python     |                7 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/challenges/2015/python) |
+| [2015](http://adventofcode.com/2015)      |  Python     |               19 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/challenges/2015/python) |
 | [2015](http://adventofcode.com/2015)      |  C++        |                0 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/challenges/2015/cpp) |
 | [2015](http://adventofcode.com/2015)      |  SQL        |                1 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/challenges/2015/sql) |
+| [2018](http://adventofcode.com/2018)      |  Python     |               25 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/challenges/2018/python) |
 
 
 

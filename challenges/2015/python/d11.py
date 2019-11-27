@@ -4,8 +4,6 @@ Advent of Code - 2015
 
     --- Day 11: Corporate Policy ---
 
-Released under the MIT License <http://opensource.org/licenses/mit-license.php>
-
 '''
 
 import re

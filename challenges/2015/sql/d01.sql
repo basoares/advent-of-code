@@ -1,9 +1,8 @@
 /*
 
 Advent of Code - 2015
---- Day 1: Repose Record --
 
-Released under the MIT License <http://opensource.org/licenses/mit-license.php>
+    --- Day 1: Repose Record ---
 
 */
 
