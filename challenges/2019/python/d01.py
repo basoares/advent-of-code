@@ -9,7 +9,7 @@ Advent of Code - 2019
 from utils import *
 
 def parse_input(day):
-    return list(day_input(day, int))
+    return day_input(day, int)
 
 def part1(data):
     return sum(mass//3-2 for mass in data)

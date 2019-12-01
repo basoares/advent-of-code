@@ -15,7 +15,8 @@ from copy import deepcopy
 #region FileInput
 
 def day_input(day, parser=str.strip, fpath='../input/d{}.txt'):
-    return map(parser, open(fpath.format(day)))
+    with open(fpath.format(day)) as f:
+        return [parser(l) for l in f]
 
 #endregion
 
