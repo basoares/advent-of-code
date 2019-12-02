@@ -8,7 +8,7 @@ Advent of Code - 2019
 
 from utils import *
 
-class IntCodeRunner:
+class IntcodeRunner:
     def __init__(self, program):
         self.program = program
         self.ip = 0 
@@ -53,7 +53,7 @@ def parse_input(day):
     return day_input(day, integers)[0]
 
 def part1(program, noun=12, verb=2):
-    runner = IntCodeRunner(program[:])
+    runner = IntcodeRunner(program[:])
     runner.set_mem(1, noun)
     runner.set_mem(2, verb)
 
@@ -62,7 +62,7 @@ def part1(program, noun=12, verb=2):
 def part2(program, target=19690720):
     for noun in range(100, -1, -1):
         for verb in range(100):
-            runner = IntCodeRunner(program[:])
+            runner = IntcodeRunner(program[:])
             runner.set_mem(1, noun)
             runner.set_mem(2, verb)
 
