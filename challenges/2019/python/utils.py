@@ -7,7 +7,7 @@ import os, sys
 
 import re
 from collections import defaultdict, Counter, deque, namedtuple
-from itertools import chain, combinations, product, permutations
+from itertools import chain, combinations, product, permutations, cycle
 from copy import deepcopy
 from networkx import Graph, DiGraph, all_pairs_shortest_path, transitive_closure, shortest_path_length
 
