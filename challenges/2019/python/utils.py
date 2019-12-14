@@ -59,4 +59,26 @@ def integers(line):
 def flatten(l):
     return [e for x in l for e in x]
 
+class DynamicList(list):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+    def __setitem__(self, index, item):
+        self.expand(index)
+        return super().__setitem__(index, item)
+
+    def __getitem__(self, index):
+        self.expand(index)
+        return super().__getitem__(index)
+    
+    def expand(self, index):
+        if isinstance(index, int):
+            index += 1
+        elif isinstance(index, slice):
+            if isinstance(index.start, int) or isinstance(index.stop, int):
+                index = max(index.start, index.stop)
+
+        if isinstance(index, int) and index >= len(self):
+            self.extend([0] * (index - len(self)))
+
 #endregion
