@@ -32,7 +32,6 @@ class IntcodeRunner:
         self.memory = DynamicList(program[:])
         self.ip = 0
         self.halt = False
-        self.input = []
         self.output = []
         self.pid = pid
         self.base_offset = 0
@@ -41,7 +40,6 @@ class IntcodeRunner:
         self.ip = 0
         self.halt = False
         self.memory = self.program[:]
-        self.input = []
         self.output = []
         self.base_offset = 0
 
@@ -54,7 +52,6 @@ class IntcodeRunner:
     def fetch_instruction(self):
         instruction = self.memory[self.ip]
 
-        #print(instruction, self.ip, self.memory)
         #Instruction has format 'MMMMII' 
         #II represents the opcode
         opcode = instruction % 100
@@ -114,11 +111,13 @@ class IntcodeRunner:
             elif opcode == Opcode.INPUT:
                 #retrieve instruction parameters
                 p1, = self.fetch_args(0, 1, modes)
+                
                 self.memory[p1] = yield #block for input
                 #print(f'Yield input: {self.pid} -> {self.memory[p1]}')
 
                 #set ip to next instruction
                 self.ip += 1
+                assert self.memory[p1] is not None
 
             elif opcode == Opcode.OUTPUT:
                 #retrieve instruction parameters
@@ -174,7 +173,6 @@ class IntcodeRunner:
 
             elif opcode == Opcode.HALT:
                 self.halt = True
-                #print(f'HaltExecution {self.pid, self.output}')
                 raise HaltExecution
                 #self.ip += 1
 
