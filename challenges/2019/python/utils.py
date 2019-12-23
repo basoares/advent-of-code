@@ -9,6 +9,7 @@ import re
 from collections import defaultdict, Counter, deque, namedtuple
 from itertools import chain, combinations, product, permutations, cycle
 from copy import deepcopy
+from math import gcd, sqrt, atan2, degrees
 from networkx import Graph, DiGraph, all_pairs_shortest_path, transitive_closure, shortest_path_length
 
 #endregion
@@ -48,6 +49,9 @@ def distance(a, b):
 
 def manhattan_distance(a, b):
     return abs(fst(a) - fst(b)) + abs(snd(a) - snd(b))
+
+def lcm(x, y):
+    return x // gcd(x, y) * y
 
 #endregion
 
