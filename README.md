@@ -15,6 +15,6 @@ After completing the 2018 edition, I started solving the problems for the previo
 | [2015](http://adventofcode.com/2015)      |  SQL        |                1 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/challenges/2015/sql) |
 | [2018](http://adventofcode.com/2018)      |  Python     |               25 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/challenges/2018/python) |
 | [2019](http://adventofcode.com/2019)      |  Python     |                8 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/challenges/2019/python) |
-
+| [2020](http://adventofcode.com/2020)      |  Python     |                8 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/challenges/2020/python) |
 
 
