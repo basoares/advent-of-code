@@ -16,9 +16,13 @@ from networkx import Graph, DiGraph, all_pairs_shortest_path, transitive_closure
 
 #region FileInput
 
-def day_input(day, parser=str.strip, fpath='../input/d{}.txt'):
+#def day_input(day, parser=str.strip, fpath='../input/d{}.txt'):
+#    with open(fpath.format(day)) as f:
+#        return [parser(l) for l in f]
+
+def day_input(day, parser=str.strip, delimiter='\n', fpath='../input/d{}.txt'):
     with open(fpath.format(day)) as f:
-        return [parser(l) for l in f]
+        return [parser(l) for l in f.read().split(delimiter)]
 
 #endregion
 
