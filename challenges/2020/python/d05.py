@@ -2,7 +2,7 @@
 
 Advent of Code - 2020
 
---- Day 5: Passport Processing  ---
+--- Day 5: Binary Boarding  ---
 
 '''
 
