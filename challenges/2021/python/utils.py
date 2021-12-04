@@ -11,6 +11,7 @@ from itertools import chain, combinations, product, permutations, cycle
 from copy import deepcopy
 from math import gcd, sqrt, atan2, degrees
 from networkx import Graph, DiGraph, all_pairs_shortest_path, transitive_closure, shortest_path_length
+import time
 
 #endregion
 
@@ -90,3 +91,12 @@ class DynamicList(list):
             self.extend([0] * (index - len(self)))
 
 #endregion
+
+def profiler(method):
+    def wrapper_method(*arg, **kw):
+        t = time.time()
+        ret = method(*arg, **kw)
+        print('Method ' + method.__name__ + ' took : ' +
+              "{:2.5f}".format(time.time()-t) + ' sec')
+        return ret
+    return wrapper_method
