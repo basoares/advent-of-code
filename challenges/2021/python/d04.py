@@ -40,10 +40,6 @@ class BingoCard():
 
         return instances
 
-def reset_cards(cards):
-    for card in cards:
-        card.reset()
-
 def parse_input(day):
     draw, *cards = day_input(day, delimiter='\n\n')
     return map(int, draw.split(',')), BingoCard.from_input(cards)
