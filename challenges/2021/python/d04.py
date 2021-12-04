@@ -18,7 +18,7 @@ class BingoCard():
             self.board[draw] = 1
 
     def bingo(self):
-        rows = [list(self.board.values())[x:x+5] for x in range(0, self.size*self.size, self.size)]
+        rows = [list(self.board.values())[x:x+self.size] for x in range(0, self.size*self.size, self.size)]
         for i in range(self.size):
             if all(row[i] == 1 for row in rows) or all(r == 1 for r in rows[i]):
                 return True
