@@ -17,13 +17,11 @@ def part1(data):
     crabs = map(int, data[0])
     positions = Counter(crabs)
 
-    min_fuel = 1e9
+    min_cost = 1e9
     for p in positions:
-        cost = sum(positions[other_pos] * abs(p-other_pos) for other_pos in positions if other_pos  != p)
-        if min_fuel > cost:
-            min_fuel = cost
+        min_cost = min(min_cost, sum(positions[other_pos] * abs(p-other_pos) for other_pos in positions if other_pos  != p))
 
-    return min_fuel
+    return min_cost
 
 @profiler
 def part12(data):
