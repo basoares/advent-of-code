@@ -18,5 +18,6 @@ After completing the 2018 edition, I started solving the problems for the previo
 | [2019](http://adventofcode.com/2019)      |  Python     |                8 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/challenges/2019/python) |
 | [2020](http://adventofcode.com/2020)      |  Python     |                8 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/challenges/2020/python) |
 | [2021](http://adventofcode.com/2021)      |  Python     |                - |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/challenges/2021/python) |
+| [2022](http://adventofcode.com/2022)      |  Python     |                1 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/challenges/2022/python) |
 
 
