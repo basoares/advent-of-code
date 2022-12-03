@@ -13,6 +13,7 @@ from math import gcd, sqrt, atan2, degrees, ceil, floor
 from networkx import Graph, DiGraph, all_pairs_shortest_path, transitive_closure, shortest_path_length
 import time
 import hashlib
+import string
 
 #endregion
 
