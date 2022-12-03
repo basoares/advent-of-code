@@ -18,11 +18,11 @@ def priority(item):
 @profiler
 def part1(data):
     common = []
-    for r in data:
-        a, b = r[:len(r)//2], r[len(r)//2:]
-        assert len(a) == len(b)
-
-        common.append(set(a).intersection(b).pop())
+    for ruck in data:
+        assert len(ruck) % 2 == 0
+        #a, b = ruck[:len(ruck)//2], ruck[len(ruck)//2:]
+        #assert len(a) == len(b)
+        common.append(set(ruck[:len(ruck)//2]).intersection(ruck[len(ruck)//2:]).pop())
 
     return sum(priority(item) for item in common)
 
