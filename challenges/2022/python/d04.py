@@ -2,7 +2,7 @@
 
 Advent of Code - 2022
 
---- Day 4: ---
+--- Day 4: Camp Cleanup ---
 
 '''
 
@@ -17,6 +17,7 @@ def part1(data):
 
 @profiler
 def part2(data):
+    #(StartA <= EndB) and (EndA >= StartB)
     return sum(x1 <= y2 and y1 >= x2 for x1, y1, x2, y2 in data)
 
 if __name__=='__main__':
