@@ -67,6 +67,9 @@ def lcm(x, y):
 def integers(line):
     return [int(i) for i in re.findall(r'-?\d+', line)]
 
+def digits(line):
+    return [int(i) for i in re.findall(r'\d+', line)]
+
 def flatten(l):
     return [e for x in l for e in x]
 
