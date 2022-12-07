@@ -20,8 +20,8 @@ def parent_dirs(dir):
 @profiler
 def part1(data):
     directories = defaultdict(int)
-    for line in data:
-        match line.split():
+    for cmd in data:
+        match cmd.split():
             case '$', 'cd', '/': 
                 path = ['/']
             case '$', 'cd', '..': 
@@ -30,9 +30,9 @@ def part1(data):
                 path.append(dir)
             case '$', 'ls': 
                 pass 
-            case 'dir', _: 
+            case 'dir', d: 
                 pass
-            case size, _:
+            case size, filename:
                 for p in parent_dirs(path):
                     directories[p] += int(size)
 
@@ -42,18 +42,24 @@ def part1(data):
 @profiler
 def part2(data):
     directories = defaultdict(int)
-    for line in data:
-        match line.split():
-            case '$', 'cd', '/': path = ['/']
-            case '$', 'cd', '..': path.pop()
-            case '$', 'cd', d: path.append(d)
-            case '$', 'ls': pass 
-            case 'dir', _: pass
+    for cmd in data:
+        match cmd.split():
+            case '$', 'cd', '/': 
+                path = ['/']
+            case '$', 'cd', '..': 
+                path.pop()
+            case '$', 'cd', dir: 
+                path.append(dir)
+            case '$', 'ls': 
+                pass 
+            case 'dir', d: 
+                pass
             case size, filename:
-                for dir in path:
-                    directories[dir] += int(size)
+                for p in parent_dirs(path):
+                    directories[p] += int(size)
 
-    return min(s for s in directories.values() if 70000000 - directories['/'] + s >= 30000000)
+    root = directories['/']
+    return min(size for size in directories.values() if 70000000 - root + size >= 30000000)
 
 if __name__=='__main__':
     data = parse_input('07')
