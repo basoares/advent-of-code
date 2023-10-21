@@ -12,6 +12,9 @@ from copy import deepcopy
 from math import gcd, sqrt, atan2, degrees, ceil, floor
 from networkx import Graph, DiGraph, all_pairs_shortest_path, transitive_closure, shortest_path_length
 import time
+from math import prod
+from functools import reduce
+from operator import mul, add
 import hashlib
 import string
 
