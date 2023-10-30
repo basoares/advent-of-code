@@ -7,3 +7,8 @@ token.txt
 .git_
 .git_save
 token.txt_
+.vscode/launch.json
+.vscode/settings.json
+*_sample.txt
+*_ex.txt
+*_test.txt
