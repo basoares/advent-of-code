@@ -15,6 +15,8 @@ def parse_input(day):
 def evaluate(nums, cur, target, part=1):
     if not nums:
         return cur == target
+    elif cur > target:
+        return False
     else:
         return evaluate(nums[1:], cur * nums[0], target, part) \
             or evaluate(nums[1:], cur + nums[0], target, part) \
