@@ -10,8 +10,7 @@ from utils import *
 
 def parse_input(day):
     data = day_input(day)
-    G = {(x, y): c for y, row in enumerate(data) for x, c in enumerate(row)}
-    return G
+    return {(x, y): c for y, row in enumerate(data) for x, c in enumerate(row)}
 
 
 def num_trails(s, G, part1=True):
