@@ -22,5 +22,6 @@ Below the links to the solutions for the different programming languages and cha
 | [2022](http://adventofcode.com/2022)      |  Python     |               13 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/challenges/2022/python) |
 | [2023](http://adventofcode.com/2023)      |  Python     |               11 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/challenges/2023/python) |
 | [2024](http://adventofcode.com/2024)      |  Python     |                1 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/challenges/2024/python) |
+| [2025](http://adventofcode.com/2025)      |  Python     |                1 |  [\[Code\]](https://github.com/basoares/advent-of-code/tree/master/challenges/2025/python) |
 
 
