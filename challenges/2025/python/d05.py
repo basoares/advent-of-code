@@ -27,11 +27,17 @@ def part1(data):
     ranges, ingredients = data
     total = 0
     for ing in ingredients:
-        for r in ranges:
-            if r[0] <= ing <= r[1]:
+        for s, e in ranges:
+            if s <= ing <= e:
                 total += 1
                 break
     return total
+
+
+@profiler
+def part1(data):
+    ranges, ingredients = data
+    return sum(1 for ing in ingredients if any(s <= ing <= e for s, e in ranges))
 
 
 @profiler
@@ -42,7 +48,7 @@ def part2(data):
     merged = [ranges.pop(0)]
     while ranges:
         start, end = ranges.pop(0)
-        for (ms, me) in merged:
+        for ms, me in merged:
             if start <= me and end >= ms: # overlap
                 merged.remove((ms, me))
                 merged.append((min(start, ms), max(end, me)))
