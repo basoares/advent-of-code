@@ -21,6 +21,7 @@ def parse_input(day):
 
     return ranges, ingredients
 
+
 @profiler
 def part1(data):
     ranges, ingredients = data
@@ -32,25 +33,22 @@ def part1(data):
                 break
     return total
 
+
 @profiler
 def part2(data):
     ranges, _ = data
 
     ranges = sorted(ranges, key=lambda x: x[0])
-    overlap = True
     merged = [ranges.pop(0)]
-    while overlap and ranges:
-        overlap = False
+    while ranges:
         start, end = ranges.pop(0)
         for (ms, me) in merged:
             if start <= me and end >= ms: # overlap
                 merged.remove((ms, me))
                 merged.append((min(start, ms), max(end, me)))
-                overlap = True
                 break
-        if not overlap:
+        else: # no overlap
             merged.append((start, end))
-            overlap = True
 
     return sum(e - s + 1 for (s, e) in merged)
 
